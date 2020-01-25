@@ -8,7 +8,9 @@ try {
       checkout scm
     }
   }
-
+environment {
+       TERRAFORM_CMD = tool name: 'terraform', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
+    }
   // Run terraform init
   stage('init') {
     node {
