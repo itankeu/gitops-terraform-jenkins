@@ -21,7 +21,7 @@ environment {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         ansiColor('xterm') {
-          sh '${TERRAFORM_CMD} init'
+          sh "${TERRAFORM_CMD} init"
         }
       }
     }
